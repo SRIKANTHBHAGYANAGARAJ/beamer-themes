@@ -1,40 +1,34 @@
-\documentclass[xcolor=x11names,handout]{beamer}
+\documentclass[handout]{beamer}
 
 
 \usepackage[utf8]    {inputenc}
 \usepackage[T1]      {fontenc}
 \usepackage[english] {babel}
 
-\usepackage{amsmath,amsfonts,graphicx,tikz}
-\usetikzlibrary{lindenmayersystems}
-\usepackage{beamersubdued}
+\usepackage{amsmath,amsfonts,graphicx}
+\usepackage{beamertue}
+
+\def\dept{/best department ever}
 
 
 \title
   [Short Title\hspace{2em}]
   {Full Title of the Presentation}
 
-\date{}
+\author
+  [Bruce Wayne]
+  {Bruce Wayne\quad Clark Kent\\Peter Parker\quad Alan Scot}
+
+\date
+  {April 01, 2011}
+
+\institute
+  {Justice League of America}
 
 
 \begin{document}
 
-\begin{frame}
-  \author
-  [Bruce Wayne]
-  {Bruce Wayne \quad Clark Kent\\Peter Parker \quad Alan Scot\\[2ex]
-    {\it Justice League of America}\\[3ex]
-    \begin{tikzpicture}
-      \draw [DeepSkyBlue4, rotate=90]
-      [l-system={%
-        rule set={F -> FF-[-F+F]+[+F-F]},
-        axiom=F, order=4, step=2pt,
-        randomize step percent=25, angle=30, randomize angle percent=5}]
-      lindenmayer system;
-    \end{tikzpicture}\\[2ex]
-    \today}
-  \titlepage
-\end{frame}
+\maketitle
 
 \section
   {Introduction}
